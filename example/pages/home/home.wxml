@@ -2,20 +2,23 @@
 <div class='container'>
 	<text class="text">这是一个测试页面</text>
 	<text class="text">这是一个测试页面</text>
-	<text class="text">这是一个测试页面</text>
-	<text class="text">这是一个测试页面</text>
-	<text class="text">这是一个测试页面</text>
 
-	<view> {{message}} </view>
-	<view wx:for="{{array}}">{{text}}</view>
-
+  <view> {{message}} </view>
+  <!-- <view> {{date}} </view> -->
+  <view wx:for="{{array}}" wx:for-item="haha" >
+    {{index + 1}}: {{haha}}
+  </view>
 
 	<view wx:if="{{name == 'zye'}}"> yejjtql </view>
 	<view wx:elif="{{name == 'zzz'}}"> zzggtql </view>
 	<view wx:else=""> yhggtql </view>
 
-	<button class='navigate-button' bindtap='tiaozhuan'>点击跳转</button>
+  <view style="margin-top: 10pt"> {{ meme }} </view>
 
-	<input type="text" class="input-text" placeholder="请输入姓名缩写" bindinput="inputName" />
+	<button class='meme-button' bindtap='meme'>戳我！</button>
+
+	<button class='navigate-button' bindtap='jump'>点击跳转</button>
+
+	<input type="text" class="input-text" placeholder="请输入姓名缩写" bindinput="inputName" style="margin-top: 30px"/>
 
 </div>

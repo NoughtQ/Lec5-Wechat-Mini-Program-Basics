@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/home/home",
+    "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },
+  "darkmode": true,
   "style": "v2",
   "rendererOptions": {
     "skyline": {

@@ -3,14 +3,16 @@
 	margin-top: 20rpx;
 	text-align: center;
 }
+
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
 	height: 100vh;
-	margin-top: -60px;
+	margin-top: 0px;
 }
+
 .navigate-button {
 	width: 120px;
 	height: 40px;
@@ -18,5 +20,21 @@
 	color: #fff;
 	border: none;
 	border-radius: 10px;
-	font-size: 18px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.meme-button {
+	width: 120px;
+	height: 40px;
+	background-color: #57c0e0;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+input {
+  border: 1pt solid black;
 }

@@ -1,23 +1,43 @@
 // pages/home/home.js
+// const app = getApp();
+let cnt = 0;
+let memes = ['67656/67656，他们喝下了云顶山泉水！', "Man! What can I say? Yunding out!"];
+
 Page({
 
   /**
    * 页面的初始数据
    */
+
+
   data: {
-    message: 'hello!',
+    // date: app.globalData.date,
+    message: 'hello',
     text: 'world!',
-    array: [1, 2, 3, 4, 5],
-    name: 'wyh',
-
-
-
+    array: ['gx', 'qzy', 'xyz'],
+    name: 'gx',
+    meme: '67656/67656，他们喝下了云顶山泉水！',
+    cnt: 0,
   },
-  tiaozhuan: function () {
+  meme: function(event) {
+    cnt = 1 - cnt;
+    this.setData({
+      meme: memes[cnt],
+    }, function () {
+      wx.showToast({
+        title: '操作完成',
+        duration: 700
+      });
+    })
+  },
+
+  jump: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
+
+
   inputName: function (e) {
     console.log(e),
       this.setData({
