@@ -6,7 +6,7 @@ live:
 
 build:
 	@echo "Building main slides..."
-	@reveal-md main.md --scripts https://cdn.tonycrane.cc/heti/heti.js,heti_worker.js --template template.html --static ../site --assets-dir assets
+	@reveal-md main.md --scripts https://cdn.tonycrane.cc/heti/heti.js,heti_worker.js --template template.html --static ../site --assets-dir assets --static-dirs=images
 	@rm ../site/main.html
 
 clean:
