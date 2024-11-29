@@ -157,6 +157,9 @@ Date: 2024/11/29
     - 同时，小程序框架的逻辑层并非运行在浏览器中，因此 JS 在 web 中一些能力都无法使用，如 `window`，`document` 等。
 
 
+<!--v-->
+## 文件类型（续）
+
 <div class="fragment">
 
 <span style="color: red">提问：回顾前端知识，简单谈谈这些文件的功能和作用？</span>
